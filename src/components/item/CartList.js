@@ -143,7 +143,11 @@ function CartList(props){
    const handleUpdateMinusQuantity = async (item) => {
       if (auth && auth.token) {
          try {
-            if(item.quantity >= 2){
+            if(item.stock === 0){
+               setSelectedItem(item.itemId);
+               setQuantityRemote(true);
+            }
+            else if(item.quantity >= 2){
                const params = { "Authorization": "Bearer " + auth.token };
                const requestBody = {orderItemId: item.orderItemId  ,quantity: item.quantity-1 };
                await updateOrderItemQuantity(params, requestBody);
@@ -160,9 +164,11 @@ function CartList(props){
             if (!err.response) {
                props.errorDisplay("No server response.");
             } else if (err.response.data === "Order item does not exist" ) {
-               props.errorDisplay(err.response.data);          
+               props.errorDisplay(err.response.data);        
+            } else if (err.response.data === "Item quantity amount is not available in stock" ) {
+               props.errorDisplay("Item is out of stock - cant change quantity");          
             } else {
-               props.errorDisplay("EError occurred update item quantity");
+               props.errorDisplay("Error occurred update item quantity");
             }         
          }
       }

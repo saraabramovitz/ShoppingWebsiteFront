@@ -18,7 +18,6 @@ function Footer(props) {
             props.onPopupCloes('');
          } catch (err) {
             if (!err.response) {
-               props.errorDisplay("No server response.");
             } else if (err.response.status === 403) {
                props.errorDisplay("You must be logged in order to perform actions. Please log in or sign up.");          
             } else {

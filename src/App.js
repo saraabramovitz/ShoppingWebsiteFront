@@ -334,6 +334,8 @@ function App() {
          </Routes>
 
          <Footer
+            messageDisplay={handleSetMessage}
+            errorDisplay={handleSetError}        
             onPopupToggle={handlePopupToggle}
             onSearchItems={handleSearchItem}
             onLogout={handleLogout}
