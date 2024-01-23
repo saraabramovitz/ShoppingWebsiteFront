@@ -1,0 +1,281 @@
+.orderPageStyle {
+   width: 85%;
+   margin: auto; 
+   min-height: 60vh;
+}
+
+.orderHeaderDiv{
+   margin-top: 5%;
+   color: #111111;
+   font-weight: 600;
+   text-align: left;
+   font-size: 50px;
+}
+
+.orderDiv{
+   border-bottom: 1px solid #dddddd;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:end; 
+   flex-wrap: nowrap;
+   padding: 1% 0;
+   margin: 2% 0 2% 0;
+}
+
+.orderInfoDiv {
+   width: 100%;
+}
+
+.detailsText{
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.boldOrderText{
+   font-weight: 700;
+   color: #111111;
+}
+ 
+.showItemsButton{
+   background-color: #e3a702;
+   color: #111111;
+   border-radius: 50px;
+   border-style: none;
+   cursor: pointer;
+   height: 45px;
+   width: 100%;
+   &:hover { 
+      background-color: #111111;
+      color: #ffffff;
+   }
+}
+
+.hideItemsButton{
+   background-color: #111111;
+   color: #ffffff;
+   border-radius: 50px;
+   border-style: none;
+   cursor: pointer;
+   height: 45px;
+   width: 100%;
+}
+
+.orderDisplayDiv{
+   background-color: #f5f5f5;
+   padding-top: 20px;
+}
+
+.orderItemsDiv{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.orderItemsDiv::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+   background-color: transparent;
+   border-radius: 5px;
+}
+ 
+.orderItemsDiv::-webkit-scrollbar-thumb {
+   background-color: #f5f5f5;
+   border-radius: 5px;
+}
+ 
+.orderItemsDiv::-webkit-scrollbar-track {
+   background-color: #f5f5f5;
+}
+ 
+.orderItem{
+   margin:  20px 40px 20px 40px;
+   padding-bottom: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:end; 
+   border-bottom: 1px solid #dddddd;
+}
+
+.orderItemImageDiv {
+   max-width: 35%;
+   overflow: hidden;
+}
+ 
+.orderItemImageDiv img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.orderItemdetailsDiv{
+   width: 60%;
+   justify-content: space-between;
+   margin-bottom: 1%;
+}
+
+.orderItemdetailsDiv p{
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.orderDetails{
+   width: 65%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.orderButtons{
+   width: 20%;
+   display: flex;
+}
+
+.separator{
+   color: #e3a702;
+   font-weight: 400;
+}
+
+.lowercase {
+   text-transform: lowercase;
+}
+
+.orderText{
+   margin-top: 1%;
+   margin-bottom: 1;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.ItemInOrderHeader{
+   margin-bottom: 10%;
+   width: 60%;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 22px;
+}
+
+.trashBtn{
+   align-self: flex-end;
+   color: #111111;
+   border-radius: 50px;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   margin-left: 10px;
+   border-style: none;
+   background-color: transparent;
+   &:hover { 
+      background-color: #f5f5f5;
+   }
+}
+
+.totalDiv{
+   padding:  20px 40px 40px 40px;
+   font-size: 20px;
+   font-weight: 700;
+   color: #111111;
+}
+
+.bold{
+   font-weight: 700;
+   color: #e3a702;
+}
+
+.tempDiv{
+   border-bottom: 1px solid #dddddd;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:end; 
+   flex-wrap: nowrap;
+   padding: 1% 0;
+   margin: 2% 0 2% 0;
+   background-color: #f5f5f5;  
+}
+
+@media (max-width: 1400px) {
+   .orderHeaderDiv{
+      font-size: 35px;
+      line-height: 35px;
+      padding-bottom: 20px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .orderHeaderDiv{
+      font-size: 40px;
+      line-height: 30px;
+      margin-bottom: 5%;
+   }
+   .orderDetails{
+      width: 100%;
+      display: block;
+   }
+   .orderDiv{
+      border-bottom: 1px solid #dddddd;
+      display: block;
+      padding: 8%;
+
+   }
+   .tempDiv{
+      border-bottom: 1px solid #dddddd;
+      display: block;
+      padding: 8%;
+   }
+   .detailsText{
+      font-size: 14px;
+      margin-bottom: 20px;
+   }
+   .orderButtons{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5%;
+   }
+   .hideItemsButton{
+      width: 30%;
+   }
+   .showItemsButton{
+      width: 30%;
+   }
+
+   .orderItemdetailsDiv{
+      width: 50%;
+   }
+
+   .orderItemImageDiv {
+      max-width: 50%;
+   }
+   .orderItem{
+      gap: 20px;
+   }
+
+   .ItemInOrderHeader{
+      width: 100%;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+   }
+
+   
+}
+
+@media (max-width: 1000px) {
+   .showItemsButton{
+      width: 60%;
+   }
+   .hideItemsButton{
+      width: 60%;
+   }
+
+   .orderItemsDiv{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      overflow-y: scroll;
+      height: 100%;
+    }
+    
+
+}

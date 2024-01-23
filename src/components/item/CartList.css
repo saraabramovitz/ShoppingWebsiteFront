@@ -1,0 +1,351 @@
+.cartPageStyle {
+   width: 85%;
+   margin: auto; 
+   min-height: 60vh;
+}
+
+.cartHeaderDiv{
+   margin-top: 5%;
+   color: #111111;
+   font-weight: 600;
+   text-align: left;
+   font-size: 50px;
+}
+
+.cartDiv{
+   display: flex;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+.cartListDiv{
+   width: 70%;
+   margin-bottom: 5%;
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 1%; 
+}
+
+.cartItemDiv {
+   width: 100%;
+   border-bottom: 1px solid #dddddd;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:end; 
+   flex-wrap: nowrap;
+   padding: 1% 0 1% 0;
+}
+
+.orderDetailsDiv{
+   padding-left: 5%;
+   width: 30%;
+}
+ 
+.cartImageDiv {
+   width: 40%;
+   display: flex;
+   max-width: 40%;
+   padding: 2%;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.cartImageDiv img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.cartDetailsDiv {
+   padding: 2%;
+   width: 100%;
+}
+
+.buttonsDiv {
+   display: flex;
+   padding-bottom: 0px;
+}
+
+.cartItemName{
+   width: 50%;
+   margin: 0;
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 25px;
+}
+
+.cartItemPrice{
+   font-size: 25px;
+   font-weight: 800;
+   margin-top: 5%;
+   margin-bottom: 0.2%;
+}
+
+.cartItemPricePerPice{
+   font-size: 15px;
+   font-weight: 400;
+   color: #111111;
+   margin: 0;
+}
+
+.summary{
+   display: flex;
+   justify-content: space-between;
+}
+
+.summaryDiv{
+   font-size: 15px;
+   justify-content:space-between;
+}
+
+.summaryHeader{
+   margin-bottom: 3%;
+   font-weight: 700;
+   font-size: 25px;
+}
+
+.summeryInerHeader{
+   font-size: 15px;
+   font-weight: 500;
+   color: #e3a702;
+}
+
+ .totalPrice{
+   font-size: 15px;
+   font-weight: 800;
+   justify-content:end;
+ }
+
+.shippingaddress{
+   justify-content: end;
+}
+ 
+.editAddress{
+   cursor: pointer;
+   color: #363636;
+   margin-left: 10px;
+}
+
+.editInput{
+   color: #111111;
+   border: none;
+   border-bottom: 1px solid #111111;
+}
+
+.payButton{
+   background-color: #e3a702;
+   color: #111111;
+   width: 100%;
+   height: 45px;
+   border-radius: 100px;
+   border-style: none;
+   cursor: pointer;
+   margin-top: 5%;
+   font-size: 15px;
+   font-weight: 600;
+   &:hover { 
+      background-color: #111111;
+      color: #ffffff;
+   }
+}
+
+.cartActiveBtn{
+   align-self: flex-end;
+   color: #e3a702;
+   border-radius: 50px;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   border-style: none;
+   background-color: transparent;
+   &:hover { 
+      background-color: #f5f5f5;
+   }
+}
+
+.cartBtn{
+   align-self: flex-end;
+   color: #111111;
+   border-radius: 50px;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   border-style: none;
+   background-color: transparent;
+   &:hover { 
+      background-color: #f5f5f5;
+   }
+}
+
+.updateQuantityDiv {
+   display: flex;
+   align-items: center;
+   margin-top: 3%;
+}
+ 
+.updateButton {
+   background-color: #f5f5f5;
+   color: #696969; 
+   border: none;
+   border-radius: 50px; 
+   font-size: 10px;
+   padding: 8px 10px;
+   cursor: pointer;
+   &:hover { 
+      background-color: #e3a702;
+      color: #ffffff;
+   }
+}
+
+.quantity{
+   margin-left: 8px;
+   margin-right: 8px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #111111;
+}
+
+.addressBold{
+   font-size: 15px;
+   font-weight: 700;
+   color: #111111;
+   margin-top: 0.5%;
+}
+
+.addressText{
+   font-size: 15px;
+   font-weight: 400;
+   color: #111111;
+}
+
+.summaryLine{
+   margin: 5% 0 5% 0;
+   border-bottom: 1px solid #dddddd;
+}
+
+.addressDiv{
+   margin-top: 2%;
+}
+
+
+
+
+@media (max-width: 1400px) {
+   .cartHeaderDiv{
+      font-size: 35px;
+      line-height: 35px;
+   }
+   
+   .cartImageDiv {
+      width: 100%;
+      max-width: 100%;
+      padding: 2%;
+      overflow: hidden;
+      cursor: pointer;
+   }
+
+   .cartItemName{
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 20px;
+   }
+}
+
+@media (max-width: 900px) {
+   .orderDetailsDiv{
+      padding-left: 0;
+      width: 100%;
+   }
+
+   .cartListDiv{
+      width: 70%;
+      margin-bottom: 5%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1%; 
+   }
+
+   .cartDiv{
+      display: block;
+      margin-top: 5%;
+      margin-bottom: 5%;
+   }
+
+   .cartListDiv{
+      width: 100%;
+   }
+
+   .cartImageDiv {
+      width: 100%;
+      max-width: 100%;
+      padding: 2%;
+      overflow: hidden;
+      cursor: pointer;
+   }
+
+   .cartDetailsDiv {
+      width: 100%;
+   }
+
+   .cartItemName{
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 20px;
+   }
+   
+   .cartItemPricePerPice{
+      font-size: 14px;
+      font-weight: 400;
+      color: #e3a702;
+      margin: 0;
+   }
+   
+   .cartItemPrice{
+      font-size: 20px;
+      font-weight: 800;
+   }
+}
+ 
+@media (max-width: 600px) {
+   .cartItemDiv {
+      display: block;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items:center; 
+      flex-wrap: nowrap;
+      padding: 1% 0 1% 0;
+   }
+
+   .buttonsDiv {
+      display: inline;
+      padding: 0px;
+      margin: 0;
+   }
+   
+}
+
+
+.quantityRemoteButton{
+   margin-top: 10px;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 14px;
+   color: #e3a702;
+}
+
+.quantityRemoteButton button{
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 14px;
+   color: #e3a702;
+   background-color: transparent;
+   text-decoration: underline;
+   border: none;
+   cursor: pointer;
+   &:hover { 
+      color: #111111;
+   }
+}

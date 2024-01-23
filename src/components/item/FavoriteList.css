@@ -1,0 +1,144 @@
+.favPageStyle {
+   width: 85%;
+   margin: auto; 
+   min-height: 60vh;
+}
+
+.favHeaderDiv{
+   margin-top: 5%;
+   color: #111111;
+   font-weight: 600;
+   text-align: left;
+   font-size: 50px;
+}
+
+.favDiv{
+   display: flex;
+   margin-top: 5%;
+   margin-bottom: 10%;
+}
+
+.favItemListDiv{
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 1%; 
+}
+
+.favItemDiv {
+   width: 100%;
+   border-bottom: 1px solid #dddddd;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items:end; 
+   flex-wrap: nowrap;
+   padding: 1% 0 1% 0;
+}
+ 
+.favImageDiv {
+   width: 20%;
+   display: flex;
+   max-width: 20%;
+   padding: 1%;
+   overflow: hidden;
+   cursor: pointer;
+}
+ 
+.favImageDiv img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.favDetailsDiv {
+   padding: 1%;
+   margin-left: 20px; 
+   width: 70%;
+}
+ 
+.favDetailsText{
+   width: 70%;
+}
+
+.favItemName{
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.favItemOverview{
+   font-size: 15px;
+   margin: 2% 0 2% 0;
+}
+
+.favItemPrice{
+   font-size: 20px;
+   font-weight: 700;
+   margin: 0px;
+   color: #e3a702;
+}
+
+.buttonsDiv {
+   width: 10%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.active{
+   background-color: transparent;
+   cursor: pointer;
+   border-style: none;
+   color: #e3a702;
+   width: 35px;
+   height: 35px;
+}
+
+.favBtn{
+   align-self: flex-end;
+   color: #111111;
+   border-radius: 50px;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   border-style: none;
+   background-color: transparent;
+   &:hover { 
+      background-color: #f5f5f5;
+   }
+}
+
+@media (max-width: 1400px) {
+   .favHeaderDiv{
+      font-size: 35px;
+      line-height: 35px;
+   }
+}
+
+
+@media (max-width: 900px) {
+   .favImageDiv {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+   }   
+}
+
+
+@media (max-width: 600px) {
+   .favItemDiv {
+      display: block;
+      align-items:center; 
+      padding:0;
+   }
+
+   .favDetailsDiv {
+      padding: 1%;
+      margin-left: 0; 
+      width: 100%;
+   }
+
+   .favDetailsText{
+      width: 100%;
+   }
+
+}

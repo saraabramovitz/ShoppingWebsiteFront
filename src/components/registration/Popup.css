@@ -1,0 +1,299 @@
+.popupBackground {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.534); 
+   z-index: 1;
+}
+
+.popup {
+   position: fixed;
+   width: 30%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: rgb(255, 255, 255);
+   border-radius: 2px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+   z-index: 2; 
+}
+ 
+.closeButton {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   background: none;
+   padding: 3px 6px 0px 6px;
+   border-radius: 50px;
+   border: none;
+   font-size: 13px;
+   font-weight: 100;
+   color: #111111;
+   &:hover { 
+      background-color: #f5f5f5;
+   }   
+}
+ 
+.popupStyle{
+   padding: 10% 15% 10% 15%;
+   margin: auto;
+}
+
+.popupHeader{
+   font-size: 25px;
+   font-weight: 700;
+   color: #e3a702;
+}
+
+.popupSecondHeader{
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 14px;
+   font-weight: 700;
+   color: #111111;
+}
+
+.popupInput{
+   font-size: 14px;
+   padding-bottom: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: none;
+   border-bottom: 0.5px solid #696969;
+   border-radius: 0;
+   width: 48%;
+   &:focus { 
+      border-color: #e3a702 !important; 
+      border-width: 0.5px !important;
+      outline-width: 0px;
+   }
+}
+
+.popupInputFullLine{
+   font-size: 14px;
+   padding-bottom: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: none;
+   border-bottom: 0.5px solid #696969;
+   border-radius: 0;
+   width: 100%;
+   &:focus { 
+      border-color: #e3a702 !important; 
+      border-width: 0.5px !important;
+      outline-width: 0px;
+   }
+}
+
+.inputRow {
+   display: flex; 
+   gap: 15px;
+}
+
+.popupButton{
+   border-radius: 50px;
+   border-style: none;
+   cursor: pointer;
+   height: 40px;
+   width: 100%;
+   background-color: #e3a702;
+   color: #111111;
+   border: none;
+   &:hover { 
+      background-color: #111111;
+      color: #ffffff;
+   }
+}
+
+.popupBlackButton{
+   border-radius: 50px;
+   border-style: none;
+   cursor: pointer;
+   width: 100%;
+   height: 40px;
+   background-color: #111111;
+   color: #ffffff;
+   border: none;
+   &:hover { 
+      background-color: #e3a702;
+      color: #111111;
+   }
+}
+
+.popupOutelineButton{
+   border-radius: 50px;
+   border-style: none;
+   cursor: pointer;
+   width: 100%;
+   height: 40px;
+   background-color: #111111;
+   color: #ffffff;
+   border: none;
+   &:hover { 
+      background-color: #e3a702;
+      color: #111111;
+   }
+}
+
+.popupLinkButton{
+   cursor: pointer;
+   text-decoration: underline;
+   color: #e3a702;
+   background-color: transparent;
+   border: none;
+}
+
+.hide{
+   display: none;
+}
+
+.line {
+   border-bottom: 0.5px solid #e3a702; 
+   margin: 20px 0;
+}
+
+.userSelect a{
+   font-size: 15px;
+   text-align: center;
+   font-weight: 400;
+}
+
+.userSelect a{
+   text-decoration: none;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 600;
+   color: #111111;
+   &:hover { 
+      color: #e3a702;
+   }
+}
+
+.space{
+   height: 30px;
+}
+
+.littleSpace{
+   height:15px;
+}
+
+.instructionsDiv{
+   display: flex;
+}
+
+.instructionsIcon{
+   color: #111111;
+   font-size: 11px;
+   margin-right: 3px;
+}
+
+.instructionsText{
+   font-size: 12px;
+}
+
+.yellow{
+   color: #e3a702;
+}
+
+.popupRemote{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.remoteText{
+   font-size: 20px;
+   font-weight: 700;
+   color: #111111;
+   text-align: center;
+   margin-bottom: 5%;
+}
+
+.popupRemoteButton{
+   border-radius: 50px;
+   border-style: none;
+   cursor: pointer;
+   height: 40px;
+   width: 75%;
+   background-color: #111111;
+   color: #ffffff;
+   border: none;
+   &:hover { 
+      background-color: #e3a702;
+      color: #111111;
+   }
+}
+
+.popupLinkToHomeButton a{  
+   cursor: pointer;
+   text-decoration: underline;
+   color: #e3a702;
+   background-color: transparent;
+   border: none;
+}
+
+.popupLinkToHomeButton{
+   margin-left: 7px;
+}
+
+.popupSecondHeaderToHome{
+   display: flex;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 14px;
+   font-weight: 700;
+   color: #111111;
+}
+
+.errorMessage{
+   margin-top: 15px;
+   color: #e3a702;
+   font-size: 13px;
+}
+
+
+.popupMessage{
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   width: 200px;
+   padding: 20px 50px 20px 50px;
+   background-color: #e3a702;
+   color: #111111;
+   border-radius: 2px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+   z-index: 2; 
+   font-size: 14px;
+   line-height: 14px;
+}
+
+.popupmError{
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   width: 200px;
+   padding: 20px 50px 20px 50px;
+   background-color: #111111;
+   color: #ffffff;
+   border-radius: 2px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+   z-index: 2; 
+   font-size: 14px;
+   line-height: 14px;
+}
+
+@media (max-width: 1200px) {
+   .popup {
+      width: 40%;
+   }
+}
+
+@media (max-width: 900px) {
+   .popup {
+      width: 80%;
+   }
+}
