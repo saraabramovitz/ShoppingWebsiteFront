@@ -24,7 +24,7 @@ function Order(props) {
          }
       }
       fetchData();
-   }, []); 
+   }, [auth, props]); 
 
    
   const isOrderItemListExist = (orderId) => {

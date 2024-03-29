@@ -30,7 +30,8 @@ function CartList(props){
          }
       }
       fetchData();
-   }, []); 
+
+   }, [auth, props]); 
 
    
    const handleAddToFavorite = async (item) => {      
@@ -45,7 +46,7 @@ function CartList(props){
             } catch (err) {
                if (!err.response) {
                   props.errorDisplay("No server response.");
-               } else if (err.response.status === 400 && err.response.data === "User does not exist" || err.response.data === "Item does not exist") {
+               } else if ((err.response.status === 400 && err.response.data === "User does not exist" )|| (err.response.data === "Item does not exist")) {
                   props.errorDisplay(err.response.data);          
                } else {
                   props.errorDisplay("Error occurred during add item to favorits.");

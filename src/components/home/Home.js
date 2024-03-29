@@ -28,7 +28,8 @@ function Home(props) {
          }
       }
       fetchData();
-   }, []); 
+
+   }, [auth, props]); 
    
 
    const handleAddToFavorite = async (item) => {      
