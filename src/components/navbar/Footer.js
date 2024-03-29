@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import './Footer.css';
 import AuthContext from '../context/AuthProvider';
@@ -7,7 +7,7 @@ import {getOrdersByUserId} from '../../services/api'
 
 function Footer(props) {
 
-   const { setAuth, auth } = useContext(AuthContext);
+   const { auth } = useContext(AuthContext);
 
    const handleGetUserOrders = async () => {
       if (auth && auth.token) {

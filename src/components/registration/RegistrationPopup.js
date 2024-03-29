@@ -1,4 +1,4 @@
-import React, {  useState, useEffect} from "react";
+import React from "react";
 import SignUp from './SignUp';
 import Login from './Login';
 import LoginRemote from './LoginRemote'
