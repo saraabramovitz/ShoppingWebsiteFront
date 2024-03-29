@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect, useState } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import './Item.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
@@ -56,7 +56,7 @@ function Item(props) {
             } catch (err) {
                if (!err.response) {
                   props.errorDisplay("No server response.");
-               } else if (err.response.status === 400 && err.response.data === "User does not exist" || err.response.data === "Item does not exist") {
+               } else if ((err.response.status === 400 && err.response.data === "User does not exist") || (err.response.data === "Item does not exist")) {
                   props.errorDisplay(err.response.data);          
                } else {
                   props.errorDisplay("Error occurred during add item to favorits.");
